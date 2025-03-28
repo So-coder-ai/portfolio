@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Narain | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="light-mode">
+    
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <canvas id="bg-canvas"></canvas>
+
+  
+    <header>
+        <div class="container">
+            <h1 class="logo">Shiv Narain</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+   
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="gradient-text">Shiv Narain</span></h1>
+                <p class="hero-subtitle">Computer Science Student & Full-Stack Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+            
+            
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="web">Web</button>
+               
+               
+            </div>
+          
+            <div class="project-grid">
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/halloween.png" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Halloween website</h3>
+                            <span class="project-category">Web</span>
+                        </div>
+                        <p class="project-description">A full-stack e-commerce solution</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://halloween-shopping-web.onrender.com" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                
+              
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/Food ordering website.png" alt="Mobile Fitness App">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Food ordereing website</h3>
+                            <span class="project-category">Mobile</span>
+                        </div>
+                        <p class="project-description">Food website for ordering healthy and fast food and grocery</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://food-website-h90l.onrender.com" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+               
+                <div class="project-card" data-category="data">
+                    <div class="project-img">
+                        <img src="images/LOgin page.png" alt="Data Visualization Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">color changing login page</h3>
+                            <span class="project-category">Data</span>
+                        </div>
+                        <p class="project-description">Interactive dashboard for visualizing complex datasets</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                
+              
+               
+             
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Computer Science Student at AKTU University</h3>
+                    <p>I'm a passionate developer with a focus on creating intuitive and impactful digital experiences. 
+                       Currently pursuing my degree in Computer Science, I specialize in full-stack development, 
+                       machine learning, and UI/UX design.</p>
+                    <p>When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with 
+                       new technologies. I believe in continuous learning and pushing the boundaries of what's possible with code.</p>
+                    
+                
+                    <div class="skills">
+                        <h4 class="skills-title">My Skills</h4>
+                        
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Science</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="profile-img">
+                        <img src="images/profile.jpg" alt="Jane Doe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h3 class="contact-subtitle">Send Me a Message</h3>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" disabled>
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Connect With Me</h3>
+                    <p>Feel free to reach out to me on social media or via email. I'm always open to discussing new projects, 
+                       creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i> fa-github/shivnarain
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i> linkedin.com/in/Shiv Narain
+                        </a>
+                        
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i> instagram.com/shivnarain
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© <span id="current-year"></span> ShivNarain. All rights reserved.</p>
+            <p class="footer-text">Designed and built with ❤️</p>
+            
+           
+            <div class="easter-egg">Press the Konami code for a surprise</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+    <script src="js/three-background.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
