@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     const navLinks = document.querySelectorAll('.nav-link');
-    const cursorDot = document.getElementById('cursor-dot');
-    const cursorOutline = document.getElementById('cursor-outline');
     const currentYearSpan = document.getElementById('current-year');
-    const easterEgg = document.querySelector('.easter-egg');
     const projectCategories = document.querySelectorAll('.category-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
@@ -81,37 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
   
-    if (window.innerWidth > 768) {
-        document.addEventListener('mousemove', function(e) {
-        
-            cursorDot.style.left = e.clientX + 'px';
-            cursorDot.style.top = e.clientY + 'px';
-            
-          
-            setTimeout(() => {
-                cursorOutline.style.left = e.clientX + 'px';
-                cursorOutline.style.top = e.clientY + 'px';
-            }, 50);
-        });
-        
-        
-        const interactiveElements = document.querySelectorAll('a, button, .project-card, .social-link');
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', function() {
-                cursorOutline.classList.add('cursor-hover');
-            });
-            
-            el.addEventListener('mouseleave', function() {
-                cursorOutline.classList.remove('cursor-hover');
-            });
-        });
-    } else {
-      
-        cursorDot.style.display = 'none';
-        cursorOutline.style.display = 'none';
-    }
-    
-  
     projectCategories.forEach(category => {
         category.addEventListener('click', function() {
            
@@ -179,31 +145,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
    
     animateOnScroll();
-    
-   
-    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-    let konamiIndex = 0;
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === konamiCode[konamiIndex]) {
-            konamiIndex++;
-            
-            if (konamiIndex === konamiCode.length) {
-                
-                document.body.classList.add('shake');
-                setTimeout(() => {
-                    alert('🎉 You found the easter egg! You are awesome! 🎉');
-                    document.body.classList.remove('shake');
-                }, 500);
-                konamiIndex = 0;
-            }
-        } else {
-            konamiIndex = 0;
-        }
-    });
-    
-   
-    easterEgg.addEventListener('click', function() {
-        alert('Hint: Try the Konami code! (↑↑↓↓←→←→BA)');
-    });
 });
