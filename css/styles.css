@@ -396,6 +396,15 @@ body.dark-mode .navbar {
     color: var(--text-primary);
 }
 
+.hero-subtitle {
+    font-size: var(--font-lg);
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 600px;
+    margin: var(--space-4) auto 0;
+    line-height: 1.6;
+}
+
 .dynamic-text {
     height: 1.2em;
     overflow: hidden;
