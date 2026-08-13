@@ -52,10 +52,14 @@
                     </div>
                 </div>
                 <div class="hero-profile">
-                    <div class="profile-container"><div class="profile-border">
-                        <!-- Replaced by the Binary Portrait component when the profile photo is provided. -->
-                        <img src="images/profile.jpeg" alt="Shiv Narain" class="profile-img"><div class="profile-status"></div>
-                    </div></div>
+                    <div class="profile-container">
+                        <div class="profile-border binary-portrait" id="binary-portrait" tabindex="0" role="button" aria-label="Reveal Shiv Narain's portrait">
+                            <canvas class="binary-portrait-canvas" aria-hidden="true"></canvas>
+                            <img src="images/shiv-narain-portrait-original.png" alt="Shiv Narain" class="profile-img binary-portrait-photo">
+                            <span class="binary-portrait-hint" aria-hidden="true">hover to reveal</span>
+                            <div class="profile-status"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="hero-info">
