@@ -13,19 +13,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // A compact contribution-style heatmap that links to Shiv's GitHub profile.
+    // Live contribution data from the public GitHub contribution feed.
     const contributionGrid = document.getElementById('contribution-grid');
-    if (contributionGrid) {
-        const activitySeed = [0, 0, 1, 0, 2, 1, 0, 0, 3, 1, 0, 2, 0, 1, 4, 2, 0, 1, 3, 0, 2, 1, 0, 3, 1, 4, 2, 0, 1, 3, 0, 2, 4, 1, 0, 2, 3, 0, 1, 4, 2, 0, 1, 3, 0, 2, 1, 4, 0, 2, 3, 1];
-        activitySeed.forEach((level, week) => {
-            for (let day = 0; day < 7; day += 1) {
-                const square = document.createElement('i');
-                const variation = (week * 3 + day * 5) % 7;
-                const activity = variation < 2 ? 0 : Math.max(0, level - (variation % 3));
-                square.dataset.level = activity;
-                contributionGrid.appendChild(square);
-            }
+    const contributionStatus = document.getElementById('contribution-status');
+
+    function renderContributions(contributions) {
+        const days = contributions.slice(-364);
+        const highestCount = Math.max(1, ...days.map((day) => day.contributionCount || 0));
+        contributionGrid.innerHTML = '';
+
+        days.forEach((day) => {
+            const square = document.createElement('i');
+            const count = day.contributionCount || 0;
+            const level = count === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil((count / highestCount) * 4)));
+            square.dataset.level = level;
+            square.title = `${count} contribution${count === 1 ? '' : 's'} on ${day.date}`;
+            contributionGrid.appendChild(square);
         });
+    }
+
+    if (contributionGrid) {
+        fetch('https://github-contributions-api.jogruber.de/v4/So-coder-ai?y=last')
+            .then((response) => {
+                if (!response.ok) throw new Error('Contribution feed unavailable');
+                return response.json();
+            })
+            .then((data) => {
+                if (!Array.isArray(data.contributions) || !data.contributions.length) throw new Error('No contribution data received');
+                renderContributions(data.contributions);
+                const total = data.contributions.reduce((sum, day) => sum + (day.contributionCount || 0), 0);
+                contributionStatus.textContent = `${total} contributions in the last year`;
+            })
+            .catch(() => {
+                contributionGrid.innerHTML = '';
+                contributionStatus.textContent = 'Live GitHub activity is temporarily unavailable';
+            });
     }
 
     const navToggle = document.querySelector('.nav-toggle');
