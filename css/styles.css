@@ -39,8 +39,8 @@ main { margin:auto; max-width:760px; padding:0 20px; }
 .section-tight { padding:26px 0 45px; }
 .section-tight h2 { font-size:16px; margin-bottom:17px; }
 .contributions { display:block; padding:0 28px; }
-.months { color:#9f9f9f; display:grid; font-size:8px; grid-template-columns:repeat(12,1fr); margin:0 0 7px 13px; }
-.contribution-grid { display:grid; gap:3px; grid-template-columns:repeat(52,1fr); }
+.months { color:#9f9f9f; display:grid; font-size:8px; grid-template-columns:repeat(13,1fr); margin:0 0 7px 13px; }
+.contribution-grid { display:grid; gap:3px; grid-template-columns:repeat(53,1fr); }
 .contribution-grid i { aspect-ratio:1; background:#151515; border-radius:1px; display:block; }
 .contribution-grid i[data-level="1"] { background:#0d3b22; }.contribution-grid i[data-level="2"] { background:#126c35; }.contribution-grid i[data-level="3"] { background:#21a74e; }.contribution-grid i[data-level="4"] { background:#4de36d; }
 .contribution-footer { color:#898989; display:flex; font-size:8px; justify-content:space-between; margin-top:8px; }.contribution-footer span:last-child { align-items:center; display:flex; gap:3px; }.contribution-footer i { background:#1c1c1c; display:inline-block; height:8px; width:8px; }.contribution-footer i:nth-of-type(2){background:#126c35}.contribution-footer i:nth-of-type(3){background:#21a74e}.contribution-footer i:nth-of-type(4){background:#4de36d}
