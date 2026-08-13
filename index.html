@@ -3,407 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiv Narain | ML & Backend Developer</title>
+    <meta name="description" content="Shiv Narain is an AI/ML Engineer building deep learning, computer vision, and LLM-powered applications.">
+    <title>Shiv Narain | AI/ML Engineer</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-text">SN</span>
-                <span class="brand-dot"></span>
-            </div>
-            
+            <div class="nav-brand"><span class="brand-text">SN</span><span class="brand-dot"></span></div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#journey" class="nav-link">Journey</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-content">
-            <a href="#home" class="mobile-nav-link">Home</a>
-            <a href="#projects" class="mobile-nav-link">Projects</a>
-            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#home" class="mobile-nav-link">Home</a><a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#about" class="mobile-nav-link">About</a><a href="#journey" class="mobile-nav-link">Journey</a>
             <a href="#contact" class="mobile-nav-link">Contact</a>
         </div>
     </div>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        
+        <div class="hero-background"><div class="gradient-orb orb-1"></div><div class="gradient-orb orb-2"></div><div class="gradient-orb orb-3"></div></div>
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-intro">
                     <span class="greeting">Hello, I'm</span>
-                    <h1 class="hero-name">
-                        Shiv Narain
-                        <span class="cursor-blink">|</span>
-                    </h1>
-                    <div class="hero-title-container">
-                        <span class="static-text">Machine Learning</span>
-                        <div class="dynamic-text">
-                            <span class="text-slide">Backend Developer</span>
-                            <span class="text-slide">Data Scientist</span>
-                            <span class="text-slide">AI Engineer</span>
-                        </div>
+                    <h1 class="hero-name">Shiv Narain <span class="cursor-blink">|</span></h1>
+                    <div class="hero-title-container"><span class="static-text">AI/ML Engineer</span></div>
+                    <p class="hero-subtitle">I build intelligent systems — from deep learning models and computer vision pipelines to LLM-powered applications. Let's build something smart together.</p>
+                    <div class="hero-social-links" aria-label="Social links">
+                        <a href="https://github.com/So-coder-ai" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/shiv-narain" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:shivnarainofficial24@gmail.com" aria-label="Email Shiv"><i class="fas fa-envelope"></i></a>
                     </div>
-                    <p class="hero-subtitle">I build data-driven systems that turn complex inputs into actionable decisions—combining machine learning with real-world execution.</p>
                 </div>
-                
                 <div class="hero-profile">
-                    <div class="profile-container">
-                        <div class="profile-border">
-                            <img src="images/profile.jpeg" alt="Shiv Narain" class="profile-img">
-                            <div class="profile-status"></div>
-                        </div>
-                    </div>
+                    <div class="profile-container"><div class="profile-border">
+                        <!-- Replaced by the Binary Portrait component when the profile photo is provided. -->
+                        <img src="images/profile.jpeg" alt="Shiv Narain" class="profile-img"><div class="profile-status"></div>
+                    </div></div>
                 </div>
             </div>
-            
             <div class="hero-info">
                 <div class="info-grid">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>shivnarainofficial24@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91-9219901909</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kanpur, Uttar Pradesh, India</span>
-                    </div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><span>shivnarainofficial24@gmail.com</span></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Kanpur, Uttar Pradesh, India</span></div>
                 </div>
-                
                 <div class="hero-actions">
-                    <a href="#projects" class="btn-primary">
-                        <span>View Projects</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="assets/Shiv_Resume 2026 new.pdf" download class="btn-secondary">
-                        <i class="fas fa-download"></i>
-                        <span>Resume</span>
-                    </a>
+                    <a href="#projects" class="btn-primary"><span>View My Work</span><i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i><span>Get In Touch</span></a>
                 </div>
             </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll</div>
-            <div class="scroll-arrow"></div>
-        </div>
+        <div class="scroll-indicator"><div class="scroll-text">Scroll</div><div class="scroll-arrow"></div></div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-label">Featured Work</span>
-                <h2 class="section-title">
-                    Recent <span class="text-gradient">Projects</span>
-                </h2>
-                <p class="section-description">
-                    Exploring the intersection of machine learning and backend development through innovative solutions
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card" data-category="ai-ml-backend">
-                    <div class="project-image">
-                        <img src="images/Project 1.png" alt="AlphaPulse Trading Bot">
-                        <div class="project-overlay">
-                            <a href="https://alphaplus-1.onrender.com/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <span class="project-category">AI/ML + Backend</span>
-                            <h3 class="project-title">AlphaPulse | AI-Powered Crypto Futures Trading Bot</h3>
-                        </div>
-                        <p class="project-description">
-                            • Built an AI-driven trading system using TimeSeriesSplit and 14+ technical indicators to generate high-confidence trading signals<br>
-                            • Developed a vectorized backtesting engine with transaction cost, slippage, and risk metric evaluation<br>
-                            • Integrated Binance API for real-time signal execution via a modular CLI-based architecture<br>
-                            • Achieved 300%+ backtested returns with optimized strategy performance and risk control
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai-ml-backend">
-                    <div class="project-image">
-                        <img src="images/Project 2.png" alt="SnipURL Service">
-                        <div class="project-overlay">
-                            <a href="https://github.com/So-coder-ai/sniurl?tab=readme-ov-file" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <span class="project-category">AI/ML + Backend</span>
-                            <h3 class="project-title">SnipURL | Scalable URL Shortener Service</h3>
-                        </div>
-                        <p class="project-description">
-                            • Designed a high-performance URL shortening system with unique link generation, redirection, and click tracking<br>
-                            • Built REST APIs for fast URL processing and analytics tracking<br>
-                            • Implemented Redis caching to reduce database load and improve response time<br>
-                            • Developed a scalable backend architecture for handling high-frequency requests
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ai-ml-backend">
-                    <div class="project-image">
-                        <img src="images/Anydoc.png" alt="AnyDoc Analyzer">
-                        <div class="project-overlay">
-                            <a href="https://anydoc.onrender.com/" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <span class="project-category">AI/ML + Backend</span>
-                            <h3 class="project-title">AnyDoc | AI-Powered Document Analyzer</h3>
-                        </div>
-                        <p class="project-description">
-                            • Built an AI application to summarize documents, extract key insights, and enable Q&A using LLM APIs<br>
-                            • Implemented chunk-based processing and prompt engineering for accurate document understanding<br>
-                            • Designed a Streamlit interface for real-time interaction and seamless user experience<br>
-                            • Integrated backend pipelines for efficient parsing and intelligent response generation
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="section-container">
             <div class="section-header">
                 <span class="section-label">About Me</span>
-                <h2 class="section-title">
-                    Education & <span class="text-gradient">Experience</span>
-                </h2>
+                <h2 class="section-title">Building practical <span class="text-gradient">AI</span></h2>
+                <p class="section-description">Hi, I'm Shiv! A Computer Science undergrad minoring in AI who builds and ships Python-based AI systems end-to-end — from integrating LLM APIs into production apps to training deep learning models evaluated with rigorous, production-relevant metrics. When I'm not training models, I'm exploring RAG pipelines, agentic workflows, and open-source AI tooling.</p>
             </div>
-            
-            <div class="about-grid">
-                <div class="education-card">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Pranveer Singh Institute Of Technology</h3>
-                        <p class="card-subtitle">Bachelor of Technology - Computer Science</p>
-                        <p class="card-detail">SGPA: 7.32</p>
-                        <p class="card-period">June 2024 - June 2028</p>
-                        <div class="card-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Kanpur, India
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="card-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>ML-Based Health Prediction & Decision Support System</h3>
-                        <p class="card-subtitle">Patent Published - Govt. of India, App. No. 202611006333 A</p>
-                        <p class="card-period">Sept 2025 – Jan 2026</p>
-                        <ul class="achievement-list">
-                            <li>Developed ML-based aquaculture health prediction system using advanced feature engineering and multiple regression models</li>
-                            <li>Built interactive Streamlit application with real-time predictions and actionable health recommendations</li>
-                            <li>Achieved high accuracy with comprehensive model evaluation using R², MSE, and SHAP explainability analysis</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="focus-grid">
+                <article class="focus-card"><div class="card-icon"><i class="fas fa-brain"></i></div><h3>Machine Learning</h3><p>Training and evaluating deep learning models (CNNs, Transformers, XGBoost) with SHAP explainability.</p></article>
+                <article class="focus-card"><div class="card-icon"><i class="fas fa-comment-dots"></i></div><h3>LLM Engineering</h3><p>Building with LLM APIs, prompt engineering, RAG, and agentic workflows (LangChain/LangGraph).</p></article>
+                <article class="focus-card"><div class="card-icon"><i class="fas fa-layer-group"></i></div><h3>Full-Stack for AI</h3><p>Shipping AI features with FastAPI, PostgreSQL/Redis, and React/Streamlit front ends.</p></article>
             </div>
-
+            <p class="learning-pill"><i class="fas fa-rocket"></i> Always learning, always building</p>
             <div class="skills-section">
                 <h3 class="skills-title">Technical <span class="text-gradient">Expertise</span></h3>
-                
                 <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>AI / ML</h4>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>XGBoost</span>
-                            <span>PyTorch</span>
-                            <span>TensorFlow</span>
-                            <span>NLP</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>Backend</h4>
-                        <div class="skill-tags">
-                            <span>FastAPI</span>
-                            <span>Flask</span>
-                            <span>REST APIs</span>
-                            <span>PostgreSQL</span>
-                            <span>Redis</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>Tools & Others</h4>
-                        <div class="skill-tags">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>Linux</span>
-                            <span>VS Code</span>
-                            <span>Java</span>
-                            <span>React.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="achievements-section">
-                <h3 class="achievements-title">Achievements & <span class="text-gradient">Certifications</span></h3>
-                
-                <div class="achievements-grid">
-                    <div class="achievement-card patent-highlight">
-                        <div class="achievement-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h4>Patent Published</h4>
-                        <p>Aquaculture Health Predictor</p>
-                        <span class="achievement-id">Application No. 20261100633</span>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>LeetCode Rating 1451</h4>
-                        <p>Active problem solver in DSA</p>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>Oracle AI Certified</h4>
-                        <p>Cloud Infrastructure 2025</p>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h4>Goldman Sachs</h4>
-                        <p>Software Engineering Simulation</p>
-                    </div>
+                    <div class="skill-category"><h4>AI / ML</h4><div class="skill-tags"><span>Python</span><span>PyTorch</span><span>CNNs/Transformers</span><span>XGBoost</span><span>SHAP</span><span>RAG</span></div></div>
+                    <div class="skill-category"><h4>LLM Engineering</h4><div class="skill-tags"><span>LangChain</span><span>LangGraph</span><span>LLM APIs</span><span>Prompt Engineering</span></div></div>
+                    <div class="skill-category"><h4>Shipping AI</h4><div class="skill-tags"><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>React</span><span>Streamlit</span></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="journey" class="journey">
         <div class="section-container">
-            <div class="section-header">
-                <span class="section-label">Get In Touch</span>
-                <h2 class="section-title">
-                    Let's <span class="text-gradient">Connect</span>
-                </h2>
-                <p class="section-description">
-                    Always open to discussing new opportunities, interesting projects, or just having a chat about technology
-                </p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>shivnarainofficial24@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+91-9219901909</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Kanpur, Uttar Pradesh, India</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://github.com/So-coder-ai" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shiv-narain/" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    
-                </div>
+            <div class="section-header"><span class="section-label">Experience</span><h2 class="section-title">My <span class="text-gradient">Journey</span></h2></div>
+            <div class="timeline">
+                <article class="timeline-item"><div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div><div class="timeline-card"><span class="timeline-date">June 2024 – June 2028</span><h3>B.Tech, Computer Science &amp; Engineering (Minor in AI)</h3><h4>Pranveer Singh Institute of Technology (PSIT), Kanpur</h4><p>Started my CS degree with a minor in Artificial Intelligence.</p></div></article>
+                <article class="timeline-item"><div class="timeline-marker"><i class="fas fa-certificate"></i></div><div class="timeline-card"><span class="timeline-date">Patent Published</span><h3>Patent Published, Government of India</h3><h4>ML-Based Aquaculture Health Prediction &amp; Decision Support System</h4><p>Engineered domain-specific features and trained Gradient Boosting/XGBoost models (R² 0.91), with an interactive Streamlit app and SHAP explainability.</p></div></article>
+                <article class="timeline-item"><div class="timeline-marker"><i class="fas fa-microscope"></i></div><div class="timeline-card"><span class="timeline-date">May 2026 – Present</span><h3>Research Intern → Undergraduate Student Researcher</h3><h4>Indian Institute of Technology (Banaras Hindu University), Varanasi</h4><p>Designed ACS-SegNet, a hybrid CNN–Transformer segmentation architecture, achieving 92.04% accuracy on histopathology tissue segmentation; deployed as a production FastAPI inference service.</p></div></article>
+                <article class="timeline-item"><div class="timeline-marker"><i class="fas fa-arrow-right"></i></div><div class="timeline-card"><span class="timeline-date">Next</span><h3>Looking for my next opportunity!</h3><p>I'm ready to contribute to a team building useful, reliable AI systems.</p></div></article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Shiv Narain </p>
-            <p>Built with passion and lots of ☕</p>
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <div class="section-header"><span class="section-label">Featured Work</span><h2 class="section-title">Recent <span class="text-gradient">Projects</span></h2><p class="section-description">AI systems and the dependable product infrastructure behind them.</p></div>
+            <div class="project-filters" aria-label="Filter projects"><button class="filter-button active" data-filter="all">All</button><button class="filter-button" data-filter="ai-ml">AI-ML</button><button class="filter-button" data-filter="web">Web</button><button class="filter-button" data-filter="tools">Tools</button></div>
+            <div class="projects-grid">
+                <article class="project-card" data-category="ai-ml web"><div class="project-image"><img src="images/Project 1.png" alt="AutoWebsite-Maker preview"><div class="project-overlay"><a href="https://github.com/So-coder-ai/AutoWebsite-Maker" class="project-link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i> Open Project</a></div></div><div class="project-content"><div class="project-header"><span class="project-category">AI-ML / Web</span><h3 class="project-title">AutoWebsite-Maker</h3></div><p class="project-description">AI-powered landing-page personalizer that extracts ad intent with Gemini API, with a robust rule-based fallback.</p><div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">React</span><span class="tech-tag">Gemini API</span><span class="tech-tag">Playwright</span><span class="tech-tag">Docker</span></div></div></article>
+                <article class="project-card" data-category="ai-ml tools"><div class="project-image"><img src="images/Anydoc.png" alt="AnyDoc preview"><div class="project-overlay"><a href="https://github.com/So-coder-ai/Anydoc" class="project-link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i> Open Project</a></div></div><div class="project-content"><div class="project-header"><span class="project-category">AI-ML / Tools</span><h3 class="project-title">AnyDoc — AI Document Analyzer</h3></div><p class="project-description">LLM-powered document summarization, key-insight extraction, and Q&amp;A with PDF parsing and chunked processing for long documents.</p><div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">LLM APIs</span><span class="tech-tag">Prompt Engineering</span><span class="tech-tag">Streamlit</span></div></div></article>
+                <article class="project-card" data-category="web"><div class="project-image"><img src="images/Project 2.png" alt="SniURL preview"><div class="project-overlay"><a href="https://github.com/So-coder-ai/sniurl" class="project-link" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt"></i> Open Project</a></div></div><div class="project-content"><div class="project-header"><span class="project-category">Web</span><h3 class="project-title">SniURL — Full-Stack URL Shortener</h3></div><p class="project-description">FastAPI + React URL shortener with JWT auth, PostgreSQL/SQLAlchemy, async Redis caching, pytest coverage, and Docker Compose.</p><div class="project-tech"><span class="tech-tag">FastAPI</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Redis</span><span class="tech-tag">Docker</span></div></div></article>
+                <article class="project-card" data-category="ai-ml tools"><div class="project-image"><img src="images/Project 1.png" alt="Aquaculture health prediction system"><div class="project-overlay"><span class="project-link project-status"><i class="fas fa-certificate"></i> Patent Published</span></div></div><div class="project-content"><div class="project-header"><span class="project-category">AI-ML / Tools</span><h3 class="project-title">ML-Based Aquaculture Health Prediction</h3></div><p class="project-description">Patent-published Government of India system (App. No. 202611006333 A) using Gradient Boosting/XGBoost models (R² 0.91) and SHAP explainability.</p><div class="project-tech"><span class="tech-tag">scikit-learn</span><span class="tech-tag">XGBoost</span><span class="tech-tag">SHAP</span><span class="tech-tag">Streamlit</span></div></div></article>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="js/main.js"></script>  
+    <section id="contact" class="contact"><div class="section-container"><div class="section-header"><span class="section-label">Get In Touch</span><h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2><p class="section-description">Building AI systems and always open to interesting problems — let's talk.</p></div><div class="contact-content"><div class="contact-info"><a class="contact-card contact-card-link" href="mailto:shivnarainofficial24@gmail.com"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h4>Email</h4><p>shivnarainofficial24@gmail.com</p></div></a><div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-details"><h4>Location</h4><p>Kanpur, Uttar Pradesh, India</p></div></div></div><div class="social-links"><a href="https://github.com/So-coder-ai" class="social-link" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a><a href="https://linkedin.com/in/shiv-narain" class="social-link" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a><a href="mailto:shivnarainofficial24@gmail.com" class="social-link" aria-label="Email Shiv"><i class="fas fa-envelope"></i></a></div></div></div></section>
+
+    <footer class="footer"><div class="footer-container"><p>&copy; 2026 Shiv Narain</p><p>Built with curiosity and lots of ☕</p></div></footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
