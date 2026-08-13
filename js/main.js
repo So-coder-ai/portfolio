@@ -88,6 +88,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Change slide every 3 seconds
         setInterval(showNextSlide, 3000);
     }
+
+    // Project filters
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+
+            filterButtons.forEach((item) => item.classList.remove('active'));
+            button.classList.add('active');
+
+            projectCards.forEach((card) => {
+                const categories = card.dataset.category.split(' ');
+                card.classList.toggle('is-hidden', filter !== 'all' && !categories.includes(filter));
+            });
+        });
+    });
     
     console.log('Portfolio loaded successfully! 🚀');
 });
